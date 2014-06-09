@@ -29,7 +29,7 @@ console.log(algo.quicksort.sort(arr,'desc'));
 [ 2, 11, 12, 12, 23, 43, 43, 54, 66 ]
 [ 66, 54, 43, 43, 23, 12, 12, 11, 2 ]
 ```
-对象数组快速排序
+对象数组快速排序，按id值大小排序
 ```{bash}
 var arrObj = [{name:'b',id:12},{name:'c',id:21},{name:'a',id:2}];
 console.log(arrObj);
