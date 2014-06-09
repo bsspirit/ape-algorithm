@@ -67,7 +67,7 @@ exports.sortObj=function(arr,key,dir){
             arr[i][key] > pivot ? left.push(arr[i]): right.push(arr[i]);
         }
     }
-    return _this.sort(left,key,dir).concat(pivotObj, _this.sort(right,key,dir));
+    return _this.sortObj(left,key,dir).concat(pivotObj, _this.sortObj(right,key,dir));
 }
 
 
