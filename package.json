@@ -1,0 +1,16 @@
+{
+    "name": "ape-utils",
+    "version": "0.0.1",
+    "description": "utils for APE API",
+    "keywords": [
+        "quicksort","sort", "ape", "algorithm"
+    ],
+    "author": "Conan Zhang <bsspirit@gmail.com> (http://blog.fens.me)",
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {},
+    "engines": {
+        "node": ">=v0.10.5"
+    },
+    "readmeFilename": "README.md"
+}
