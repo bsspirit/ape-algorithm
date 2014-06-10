@@ -3,6 +3,8 @@ APE: 算法工具包
 
 支持普通数组的排序和数组对象的排序。
 
+http://blog.fens.me/algorithm-quicksort-nodejs/
+
 ## INSTALL
 
 ```{bash}
@@ -13,7 +15,8 @@ npm install ape-algorithm
 
 + quicksort.js   快速排序
 
-## demo
+
+## Demo
 
 example.js
 
