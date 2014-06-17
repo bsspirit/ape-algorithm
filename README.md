@@ -13,7 +13,10 @@ npm install ape-algorithm
 
 ## API
 
-+ quicksort.js   快速排序
++ quicksort.js      快速排序
++ insertionsort.js  插入排序
++ bucketsort.js     桶排序
++ data.js           产生随机数据
 
 
 ## Demo

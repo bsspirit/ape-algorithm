@@ -1,9 +1,10 @@
 {
   "name": "ape-algorithm",
-  "version": "0.0.2",
-  "description": "utils for APE API",
+  "version": "0.0.3",
+  "description": "Algorithm for APE API",
   "keywords": [
     "quicksort",
+    "bucketsort",
     "sort",
     "ape",
     "algorithm"
