@@ -30,27 +30,26 @@ var data = [ 7, 36, 65, 56, 33, 60, 110, 42, 42, 94,  59, 22, 83, 84, 63, 77, 67
 console.log(data);
 console.log(algo.bucketsort.sort(data,5));
 console.log(algo.bucketsort.sort(data,10));
-console.log(algo.bucketsort.sort(data,10,1,200));
 
 //产生随机数据
 var data = algo.data.randomData(1000*1000,1,100);
 console.log(data.length);
 
-//////////////////////////////////////
-//产生随机数据
-//////////////////////////////////////
-var data = algo.data.randomData(1000*10,1,100);
+////////////////////////////////////////
+////产生随机数据
+////////////////////////////////////////
+var data = algo.data.randomData(1000*100,200,900);
 var s1 = new Date().getTime();
 algo.quicksort.sort(data);
 var s2 = new Date().getTime();
 algo.insertionsort.sort(data);
 var s3 = new Date().getTime();
-algo.bucketsort.sort(data,30);
+algo.bucketsort.sort(data,700);
 var s4 = new Date().getTime();
 
-console.log("quicksort %s",s2-s1);
-console.log("insertion %s",s3-s2);
-console.log("bucket %s",s4-s3);
+console.log("quicksort time: %sms",s2-s1);
+console.log("insertion time: %sms",s3-s2);
+console.log("bucket time: %sms",s4-s3);
 
 
 
