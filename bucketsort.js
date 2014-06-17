@@ -4,8 +4,6 @@
 // 桶排序
 /////////////////////////////////////////////////
 
-//var quicksort = require('./quicksort');
-
 var _this = this
     , L = require('linklist');
 
@@ -43,7 +41,7 @@ exports.sort = function (arr, count) {
             var bucket = buckets[idx];
             var insert = false;//插入标石
             L.reTraversal(bucket, function (item, done) {
-                if (arr[i] < item.v) {//小于，左边插入
+                if (arr[i] <= item.v) {//小于，左边插入
                     L.append(item, _val(arr[i]));
                     insert = true;
                     done();//退出遍历
@@ -62,6 +60,7 @@ exports.sort = function (arr, count) {
     var result = [];
     for (var i = 0, j = 0; i < count; i++) {
         L.reTraversal(buckets[i], function (item) {
+//            console.log(i+":"+item.v);
             result[j++] = item.v;
         });
     }
