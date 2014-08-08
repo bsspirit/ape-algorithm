@@ -1,6 +1,6 @@
 {
   "name": "ape-algorithm",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Algorithm for APE API",
   "keywords": [
     "quicksort",
@@ -12,7 +12,9 @@
   "author": "Conan Zhang <bsspirit@gmail.com> (http://blog.fens.me)",
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "linklist": "0.0.3"
+  },
   "engines": {
     "node": ">=v0.10.5"
   },
