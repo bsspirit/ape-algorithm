@@ -1,0 +1,12 @@
+{
+  "name": "ape-algorithm",
+  "version": "0.0.7",
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
