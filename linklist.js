@@ -22,8 +22,6 @@
 //console.log(list._idleNext  );
 
 
-
-
 var L = require('linklist');
 var list = L.init();
 L.append(list, {a:1});

@@ -1,6 +1,6 @@
 {
   "name": "ape-algorithm",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Algorithm for APE API",
   "keywords": [
     "quicksort",
