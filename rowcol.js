@@ -55,9 +55,10 @@ exports.col2row2 = function (data, ccol, dcol) {
 
     var str = ''
         ,map = {}
-        ,rowLen = 0;
+        ,rowLen = 0
+        ,i=0;
 
-    for(var i=0;i<data.length;i++){
+    for(i=0;i<data.length;i++){
         var field = data[i][ccol];
         map[field]=data[i][dcol];
 
@@ -66,7 +67,7 @@ exports.col2row2 = function (data, ccol, dcol) {
     }
 
     var rows = [];
-    for(var i=0;i<rowLen;i++){
+    for(i=0;i<rowLen;i++){
         var obj = {};
         eval(str)
         rows.push(obj);
