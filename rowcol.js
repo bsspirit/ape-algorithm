@@ -7,7 +7,7 @@
 var _this = this;
 
 /**
- * 列转行
+ * 列转行，时间复杂度O(n*m)
  *
  * @param data Array JSON数组
  * @prarm dcol string 字段列名
@@ -38,6 +38,38 @@ exports.col2row = function (data,ccol, dcol) {
             row[data[j][ccol]] = data[j][dcol][i];
         }
         rows.push(row);
+    }
+    return rows;
+}
+
+/**
+ * 列转行, 时间复杂度O(n+m)
+ *
+ * @param data Array JSON数组
+ * @prarm dcol string 字段列名
+ * @prarm dcol string 数据列名
+ */
+exports.col2row2 = function (data, ccol, dcol) {
+    ccol = ccol || 'field';
+    dcol = dcol || 'data';
+
+    var str = ''
+        ,map = {}
+        ,rowLen = 0;
+
+    for(var i=0;i<data.length;i++){
+        var field = data[i][ccol];
+        map[field]=data[i][dcol];
+
+        rowLen = map[field].length; // 数据的行数
+        str += "obj['"+field+"'] =map['"+field+"'][i];" //构建行数的执行语句
+    }
+
+    var rows = [];
+    for(var i=0;i<rowLen;i++){
+        var obj = {};
+        eval(str)
+        rows.push(obj);
     }
     return rows;
 }

@@ -61,14 +61,19 @@ var data = [
     { date: 20080104, x1: 3.5916, x2: 1.5916 }
 ];
 var d2 = algo.rowcol.row2col(data);
-console.log(d2);
+//console.log(d2);
 var d3 = algo.rowcol.col2row(d2);
 console.log(d3);
+var d4 = algo.rowcol.col2row2(d2);
+console.log(d4);
 
-var d2 = algo.rowcol.row2col(data,'a','b');
-console.log(d2);
-var d3 = algo.rowcol.col2row(d2,'a','b');
-console.log(d3);
+
+//var d2 = algo.rowcol.row2col(data,'a','b');
+//console.log(d2);
+//var d3 = algo.rowcol.col2row(d2,'a','b');
+//console.log(d3);
+
+
 
 
 
